@@ -1,7 +1,7 @@
 package abc081b;
 
 import java.util.Scanner;
-
+/** かかった時間:28m8.376s  */
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
