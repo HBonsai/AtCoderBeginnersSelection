@@ -17,7 +17,7 @@ public class Main {
 		loop: while (true) {
 			for (int i = 0; i < a.length; i++) {
 				if (a[i]%2 ==1) {
-					break loop;
+					break loop; // 奇数にぶち当たったら抜ける
 				}
 				a[i] = a[i]/2; // 再格納
 			}
