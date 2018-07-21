@@ -1,7 +1,7 @@
 package abc087b;
 
 import java.util.Scanner;
-
+/** 解くのにかかった時間:約30分（コミット履歴より） */
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
