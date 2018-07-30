@@ -12,6 +12,10 @@ public class Main {
 		int b = in.nextInt();
 		/* ググった:桁数の取り出し方　http://tech.pjin.jp/blog/2015/10/27/%E7%B6%9A%E3%83%BB%E3%81%A8%E3%81%A3%E3%81%A6%E3%82%82%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%84java%E3%80%80%E3%80%90%E7%AC%AC%EF%BC%92%EF%BC%92%E5%9B%9E%E3%80%80%E5%9E%8B%E5%A4%89/ */
 		int total_sums = 0;
+		/* こういう書き方もある https://beta.atcoder.jp/contests/abs/submissions/2208420
+ *      for(int k = i; k > 0; k /= 10) {
+        	v += k % 10;
+      	} */
 		for (int i = 1; i <= n; i++) {
 			int fifth = i/10000;
 			int forth = (i%10000)/1000;
