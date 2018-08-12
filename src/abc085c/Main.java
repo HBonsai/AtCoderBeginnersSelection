@@ -12,11 +12,12 @@ public class Main {
 
 		for (int x = 0; x <= Y/10000; x++) {
 			for (int y = 0; y <= (Y - 10000 * x)/5000; y++) {
-				for (int z = 0; z <= (Y - 10000 * x - 5000 * y)/1000 ; z++) {
-					if ((10000*x + 5000*y + 1000*z) == Y && (x+y+z) == N) {
-						System.out.println(x + " " + y + " " + z);
-						return;
-					};
+//				for (int z = 0; z <= (Y - 10000 * x - 5000 * y)/1000 ; z++) {
+//				これはO(N^3)になって効率が悪いのでTLEする。よって下でO(N^2)への圧縮を図る
+				int z = N - x - y;
+				if ((10000*x + 5000*y + 1000*z) == Y) {
+					System.out.println(x + " " + y + " " + z);
+					return;
 				}
 			}
 		}
